@@ -12,6 +12,7 @@ class Homecontroller extends GetxController {
     var decode = jsonDecode(response.body);
     var list = decode.map((e) => Prdmodel.fromMap(e)).toList();
     prdlist.clear();
+    
     prdlist.addAll(list);
     print(prdlist);
   }
